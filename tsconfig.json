@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es2017",
     "module": "commonjs",
     "outDir": "dist",
+    "lib": ["es2017"],
     "sourceMap": true,
     "declaration": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true
+    "skipLibCheck": true,
+    "strict": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "src/**/*.test.ts"]
+  "exclude": ["src/**/*.test.ts"]
 }

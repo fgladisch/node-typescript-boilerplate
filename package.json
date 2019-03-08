@@ -18,22 +18,23 @@
     "boilerplate",
     "seed"
   ],
-  "devDependencies": {
-    "@types/chai": "4.1.3",
-    "@types/mocha": "5.2.0",
-    "@types/node": "9.6.7",
-    "chai": "4.1.2",
-    "mocha": "5.1.1",
-    "rimraf": "2.6.2",
-    "ts-node": "6.0.1",
-    "tslint": "5.9.1",
-    "tslint-config-prettier": "1.12.0",
-    "typescript": "2.8.3"
-  },
   "scripts": {
+    "postinstall": "tsc",
+    "prepublishOnly": "tsc",
     "start": "ts-node src/index",
-    "build": "rimraf dist && tsc",
-    "test": "mocha -r ts-node/register src/**/*.test.ts",
-    "prepublishOnly": "yarn test && yarn build"
+    "test": "mocha -r ts-node/register src/**/*.test.ts"
+  },
+  "dependencies": {
+    "@types/node": "11.10.5",
+    "typescript": "3.3.3333"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.6",
+    "chai": "4.2.0",
+    "mocha": "6.0.2",
+    "ts-node": "8.0.3",
+    "tslint": "5.13.1",
+    "tslint-config-prettier": "1.18.0"
   }
 }
