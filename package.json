@@ -18,6 +18,7 @@
   "scripts": {
     "postinstall": "tsc",
     "prepublishOnly": "tsc",
+    "watch": "tsnd src/index",
     "start": "node dist/index",
     "test": "jest"
   },
