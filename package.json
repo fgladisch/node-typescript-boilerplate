@@ -1,17 +1,14 @@
 {
-  "name": "ts-node-seed",
+  "name": "node-typescript-boilerplate",
   "private": true,
-  "description": "Boilerplate project for Node.js apps in TypeScript",
+  "description": "Boilerplate project for node.js apps in TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "repository": "git@github.com:fgladisch/ts-node-seed.git",
+  "repository": "git@github.com:fgladisch/node-typescript-boilerplate.git",
   "author": "Felix Gladisch <felix@felixgladisch.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fgladisch/ts-node-seed/issues"
+    "url": "https://github.com/fgladisch/node-typescript-boilerplate/issues"
   },
   "keywords": [
     "typescript",
@@ -21,20 +18,19 @@
   "scripts": {
     "postinstall": "tsc",
     "prepublishOnly": "tsc",
-    "start": "ts-node src/index",
-    "test": "mocha -r ts-node/register src/**/*.test.ts"
+    "start": "node dist/index",
+    "test": "jest"
   },
   "dependencies": {
-    "@types/chai": "4.1.7",
-    "@types/mocha": "5.2.6",
-    "@types/node": "11.10.5",
-    "chai": "4.2.0",
-    "mocha": "6.0.2",
-    "ts-node": "8.0.3",
-    "typescript": "3.3.3333"
+    "@types/node": "12.0.10",
+    "typescript": "3.5.2"
   },
   "devDependencies": {
-    "tslint": "5.13.1",
+    "@types/jest": "24.0.15",
+    "jest": "24.8.0",
+    "ts-jest": "24.0.2",
+    "ts-node-dev": "1.0.0-pre.40",
+    "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0"
   }
 }
