@@ -1,9 +1,9 @@
-# ts-node-seed
+# node-typescript-boilerplate
 
-Boilerplate project for Node.js apps in TypeScript.
+Boilerplate project for node.js apps in TypeScript.
 
 ```bash
-git clone git@github.com:fgladisch/ts-node-seed.git <my-project>
+git clone git@github.com:fgladisch/node-typescript-boilerplate.git <my-project>
 ```
 
 ## License
